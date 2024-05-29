@@ -1,0 +1,68 @@
+[
+  {
+    "id": "141283",
+    "name": "T-shirt blauw",
+    "size": "L",
+    "amount": 0
+  },
+  {
+    "id": "141284",
+    "name": "T-shirt rood",
+    "size": "M",
+    "amount": 13
+  },
+  {
+    "id": "141285",
+    "name": "T-shirt groen",
+    "size": "M",
+    "amount": 5
+  },
+  {
+    "id": "141286",
+    "name": "T-shirt groen",
+    "size": "S",
+    "amount": 8
+  },
+  {
+    "id": "141287",
+    "name": "T-shirt geel",
+    "size": "L",
+    "amount": 10
+  },
+  {
+    "id": "141288",
+    "name": "T-shirt geel",
+    "size": "M",
+    "amount": 9
+  },
+  {
+    "id": "141289",
+    "name": "T-shirt geel",
+    "size": "S",
+    "amount": 11
+  },
+  {
+    "id": "153824",
+    "name": "Trui blauw",
+    "size": "L",
+    "amount": 0
+  },
+  {
+    "id": "153825",
+    "name": "Trui blauw",
+    "size": "M",
+    "amount": 6
+  },
+  {
+    "id": "153826",
+    "name": "Trui groen",
+    "size": "L",
+    "amount": 9
+  },
+  {
+    "id": "153827",
+    "name": "Trui geel",
+    "size": "S",
+    "amount": 6
+  }
+]
