@@ -35,16 +35,16 @@ function createItemElement(item) {
     element.style.height = '200px'; // Set fixed height
     element.style.margin = '10px'; // Add spacing between grid items
     element.innerHTML = `
-    <div class="card mb-3" style="height: 100%; border: 1px solid #ccc;"> <!-- Apply border directly -->
-        <div class="card-body" style="height: 100%;">
-            <h2 class="card-title name">${item.name}</h2>
-            <p class="card-text size">${item.size}</p>
-            <p class="card-text amount">Amount: ${item.amount}</p>
-            <button class="btn btn-danger minus">-</button>
-            <button class="btn btn-success plus">+</button>
+        <div class="card mb-3" style="height: 100%; border: 1px solid #ccc;"> <!-- Apply border directly -->
+            <div class="card-body" style="height: 100%;">
+                <h2 class="card-title name">${item.name}</h2>
+                <p class="card-text size">${item.size}</p>
+                <p class="card-text amount">Amount: ${item.amount}</p>
+                <button class="btn btn-danger minus">-</button>
+                <button class="btn btn-success plus">+</button>
+            </div>
         </div>
-    </div>
-`;
+    `;
 
     return element;
 }
