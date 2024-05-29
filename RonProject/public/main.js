@@ -28,15 +28,17 @@ function renderItems(items, container) {
         plusButton.addEventListener('click', () => updateAmount(item.name, amountElement, 1));
     });
 }
-
 function createItemElement(item) {
     const element = document.createElement('div');
     element.className = 'info';
+    element.style.width = '250px'; // Set fixed width
+    element.style.height = '200px'; // Set fixed height
+    element.style.margin = '10px'; // Add spacing between grid items
     element.innerHTML = `
-    <div class="card mb-3">
-        <div class="card-body">
+    <div class="card mb-3" style="height: 100%; border: 1px solid #ccc;"> <!-- Apply border directly -->
+        <div class="card-body" style="height: 100%;">
             <h2 class="card-title name">${item.name}</h2>
-            <p class="card-text size">Size: ${item.size}</p>
+            <p class="card-text size">${item.size}</p>
             <p class="card-text amount">Amount: ${item.amount}</p>
             <button class="btn btn-danger minus">-</button>
             <button class="btn btn-success plus">+</button>
@@ -46,7 +48,6 @@ function createItemElement(item) {
 
     return element;
 }
-
 function updateAmount(name, amountElement, change) {
     let amount = parseInt(amountElement.textContent);
     amount += change;
@@ -91,12 +92,10 @@ function setupFilterButtons() {
 }
 
 function filterItems(size) {
-    console.log("Filtering items by size:", size);
-    const cardContainer = document.getElementById('card');
-    const items = cardContainer.querySelectorAll('.info');
-    items.forEach(item => {
+    const cardElement = document.getElementById('card');
+    const items = cardElement.querySelectorAll('.info');
+    items.forEach((item) => {
         const itemSize = item.querySelector('.size').textContent;
-        console.log("Item size:", itemSize);
         item.style.display = (size === 'All' || itemSize === size) ? 'block' : 'none';
     });
 }
